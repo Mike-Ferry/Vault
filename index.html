@@ -28,46 +28,9 @@
       background: #f7f7f7;
     }
 
-    .mfo-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100px;
-      padding: 0 32px;
-      background: #ffffff;
-      border-bottom: 1px solid #e7e7e7;
-    }
-
-    .mfo-logo {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-    }
-
-    .mfo-logo-mark {
-      display: block;
-      width: 190px;
-      height: auto;
-    }
-
-    .beta-badge {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 6px 11px;
-      border: 1px solid #d71920;
-      border-radius: 999px;
-      color: #d71920;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-
     .mfo-vault-embed {
       width: 100%;
-      height: calc(100vh - 100px);
+      height: 100vh;
       min-height: 750px;
     }
 
@@ -78,40 +41,9 @@
       display: block;
     }
 
-    @media (max-width: 600px) {
-      .mfo-header {
-        height: 84px;
-        padding: 0 20px;
-      }
-
-      .mfo-logo-mark {
-        width: 160px;
-      }
-
-      .beta-badge {
-        padding: 6px 9px;
-        font-size: 10px;
-      }
-
-      .mfo-vault-embed {
-        height: calc(100vh - 84px);
-        min-height: 650px;
-      }
-    }
   </style>
 </head>
 <body>
-  <header class="mfo-header" aria-label="Mike Ferry Organization">
-    <div class="mfo-logo" aria-label="The Mike Ferry Organization">
-      <img
-        class="mfo-logo-mark"
-        src="mfo-logo.png"
-        alt="Mike Ferry The Original"
-      >
-    </div>
-    <span class="beta-badge" aria-label="Beta test">Beta Test</span>
-  </header>
-
   <main class="mfo-vault-embed">
     <iframe
       src="https://mfo-vault.marketing-mi-9210.chatgpt.site"
